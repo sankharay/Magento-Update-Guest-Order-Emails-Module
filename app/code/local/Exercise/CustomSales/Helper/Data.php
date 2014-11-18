@@ -9,7 +9,7 @@ class Exercise_CustomSales_Helper extends Mage_Core_Helper_Abstract{
      */
     function changeGuestEmail($orderid)
     {
-    	echo $orderid;
+    	
     }
 
 }
