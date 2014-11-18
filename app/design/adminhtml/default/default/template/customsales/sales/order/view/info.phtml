@@ -174,12 +174,13 @@ function callGuestEmailController(){
            method: 'Post',
            parameters: {"order_id":"<?php echo $_order->getRealOrderId(); ?>","emailadress":emailaddress},
            onComplete: function(transport) {
-                if( transport.responseText == 'updated')
+                if( transport.responseText == true)
                 {
                     document.getElementById('editemail').style.display = 'none';
                     document.getElementById("emailupdatedata").innerHTML = emailaddress;
+                }else{
+                    alert("error - please try again");
                 }
-
            }
        });
         }

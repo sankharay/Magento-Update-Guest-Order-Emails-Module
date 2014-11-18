@@ -8,8 +8,10 @@ class Exercise_CustomSales_IndexController extends Mage_Core_Controller_Front_Ac
    	{
    		$order = Mage::getModel('sales/order')->load($PostValues['order_id'], 'increment_id');
    		$order->setCustomerEmail($PostValues['emailadress'])->save();
-   		echo "updated";
-   	}
+   		       echo true;
+      }else{
+         echo false;
+      }
    }
 }
 
