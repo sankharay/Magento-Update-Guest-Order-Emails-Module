@@ -3,12 +3,8 @@ class Exercise_CustomSales_Adminhtml_IndexController extends Mage_Adminhtml_Cont
 {
    public function indexAction ()
    {
-     echo 'test indexs';
+     
    }
-   public function mamethodeAction ()
-   {
-     echo 'test mymethod';
-    }
 }
 
 ?>

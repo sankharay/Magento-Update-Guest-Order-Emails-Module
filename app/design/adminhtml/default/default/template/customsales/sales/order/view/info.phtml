@@ -160,6 +160,7 @@ $orderStoreDate = $this->formatDate($_order->getCreatedAtStoreDate(), 'medium', 
 <div class="clear"></div>Exercise_CustomSales
 <?php endif; ?>
 <script type="text/javascript">
+document.getElementById('editemail').style.display = 'none';
 function showemailbox()
 {
     document.getElementById('editemail').style.display = 'block';
@@ -194,9 +195,3 @@ function callGuestEmailController(){
     return true;
 }
 </script>
-<style type="text/css">
-#editemail
-{
-    display: none;
-}
-</style>
